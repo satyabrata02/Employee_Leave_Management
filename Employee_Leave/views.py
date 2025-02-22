@@ -43,4 +43,3 @@ class LeaveStatusUpdateView(generics.UpdateAPIView):
         if leave_request.status not in ['pending']:
             return Response({"detail":"Leave status can only be updated if it is pending"},status=status.HTTP_400_BAD_REQUEST)
         return super().update(request, *args, **kwargs)
-    
