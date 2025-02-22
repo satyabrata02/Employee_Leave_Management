@@ -4,6 +4,7 @@ from rest_framework import status, generics
 from rest_framework.pagination import PageNumberPagination
 from .models import LeaveRequest, Employee
 from .serializers import LeaveRequestSerializers, LeaveStatusUpdateSerializer
+
 # Create your views here.
 class CustomPagination(PageNumberPagination):
     page_size = 10
